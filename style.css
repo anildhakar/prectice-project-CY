@@ -1,0 +1,40 @@
+/* Basic Reset - Faltu margins hatane ke liye */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar - Ek line mein content lane ke liye flex use kiya */
+.navbar {
+ display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-bottom: 1px solid red;  
+}
+
+.brand { font-size: 22px; font-weight: bold; }
+.menu a { margin-left: 20px; text-decoration: none; color: black; font-weight: bold; }
+
+/*  Main Layout Container */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/*  Hero/Header Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 1px solid black;
+}
+
+.hero h1 { font-size: 80px; font-weight: 900; }
+.hero .subtitle { font-size: 24px; font-weight: bold; margin-bottom: 20px; }
+.hero-links a { color: black; margin: 0 10px; }
+
+
+
