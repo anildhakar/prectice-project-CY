@@ -1,5 +1,4 @@
-/* Step 1: Basic Reset - Faltu margins hatane ke liye */
-* {
+* {                        /* Faltu margins hatane ke liye */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +10,7 @@
  display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    border-bottom: 1px solid red;  
+    border-bottom: 1px solid black;  
 }
 
 .brand { font-size: 22px; font-weight: bold; }
@@ -25,7 +24,7 @@
     border-right: 1px solid black;
 }
 
-/* Step 4: Hero/Header Section */
+/* Hero/Header Section */
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -68,8 +67,8 @@
 }
 .color-row { margin-bottom: 10px; font-weight: bold; }
 
-/* Bottom Cards */
-.cards-section {
+
+.cards-section {    /* Bottom Cards */
     display: flex;
     padding: 50px;
     gap: 20px;
@@ -121,7 +120,7 @@
 .btn-sub-req { background: transparent; border: 1px solid white; color: white; padding: 7px 15px; border-radius: 4px; cursor: pointer; }
 .btn-log-in { background: #4C5FD5; border: none; color: white; padding: 8px 25px; border-radius: 4px; margin-left: 10px; cursor: pointer; }
 
-/* Hero Purple */
+/* Hero Styles */
 .hc-hero-purple {
     background: #dadbf1;
     padding: 100px 20px;  
@@ -134,7 +133,7 @@
 .hc-search-wrapper input { width: 100%; padding: 18px; border: 1px solid black; font-size: 17px; }
 .hc-arrow-icon { position: absolute; right: 20px; top: 18px; font-size: 22px; }
 
-/* Grid Layout ke css (Strict Lining) */
+/* Grid Layout css Strict Lining */
 .hc-service-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -148,4 +147,24 @@
 .item-info p { line-height: 1.6; color: #333; margin-bottom: 10px; font-size: 17px; }
 .item-info a { color: #4C5FD5; text-decoration: none; font-weight: bold; }
 
+/* Grid Line Utilities (Matches your top design) */
+.b-right { border-right: 1px solid black; }
+.b-bottom { border-bottom: 1px solid black; }
+
+/* Dark Footer Styling */
+.hc-footer-black {
+    background: black;
+    color: white;
+    padding: 80px 40px;
+}
+
+.hc-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.f-column h4 { font-size: 22px; margin-bottom: 25px; }
+.f-column a { display: block; color: white; text-decoration: none; margin-bottom: 10px; font-size: 15px; }
+.f-contact-details { margin-top: 40px; }
 
