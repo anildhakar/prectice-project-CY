@@ -1,5 +1,6 @@
 * {                        /* Faltu margins hatane ke liye */
     margin: 0;
+    
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
@@ -10,7 +11,7 @@
  display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    border-bottom: 1px solid black;  
+    border-bottom: 2px solid black;  
 }
 
 .brand { font-size: 22px; font-weight: bold; }
@@ -18,54 +19,58 @@
 
 /*  Main Layout Container */
 .main-container {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 /* Hero/Header Section */
 .hero {
     text-align: center;
-    padding: 80px 20px;
-    border-bottom: 1px solid black;
+    padding: 25px 20px;
+    border-bottom: 2px solid black;
 }
 
-.hero h1 { font-size: 80px; font-weight: 900; }
+.hero h1 { font-size: 100px; font-weight: 800; }
 .hero .subtitle { font-size: 25px; font-weight: bold; margin-bottom: 20px; }
 .hero-links a { color: black; margin: 0 10px; }
-.dashed-box { border: 1px dashed black; padding: 5px 10px; }
+.dashed-box { border: 2px dashed black; padding: 5px 10px; }
 
 /* Content Grid 3 columns banane ke liye */
 .content-grid {
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 .column {
     flex: 1;
-    padding: 40px;
+    padding: 10px;
+    
+    
 }
 
 .middle-col {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
-.column h3 { margin-bottom: 20px; }
-.column ul { padding-left: 20px; line-height: 2; }
-.resource-links a { display: block; color: black; font-weight: bold; margin-bottom: 10px; }
+.column h3 { margin-bottom: 20px;  }
+.column ul { padding-left: 20px; line-height: 1.3; }
+.resource-links a { display: block; color: black; font-weight: bold; margin-bottom: 2px; }
+
+
 
 /*  Color Palette Dots */
 .dot {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 0px;
 }
-.color-row { margin-bottom: 10px; font-weight: bold; }
+.color-row { margin-bottom: 18px; font-weight: bold; }
 
 
 .cards-section {    /* Bottom Cards */
@@ -82,7 +87,7 @@
 
 .black-card { background: black; color: white; }
 .gray-card { background: #444; color: white; }
-.white-card { border: 1px solid black;} 
+.white-card { border: 2px solid black;} 
 
 
 
@@ -90,8 +95,8 @@
 
 /* Divider Line for Reference Image Section */
 .divider-border {
-    border-top: 1px solid black;
-    padding: 60px 0;
+    border-top: 2px solid black;
+    padding: 40px 0;
     text-align: center;
     background: white;
 }
@@ -104,8 +109,10 @@
 
 /* Help Center Section Inside Original Border */
 .hc-box {
-    width: 100%;
-    border-top: 1px solid black;
+    width: 90%;
+    margin-left: 60px;
+    margin-right: 60px;
+    /* border-top: 1px solid black; */
 }
 
 /* Header Styles */
@@ -115,6 +122,8 @@
     background: black;
     color: white;
     padding: 20px 30px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
 }
 
 .btn-sub-req { background: transparent; border: 1px solid white; color: white; padding: 7px 15px; border-radius: 4px; cursor: pointer; }
@@ -125,7 +134,7 @@
     background: #dadbf1;
     padding: 100px 20px;  
     text-align: center;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
 
 .hc-hero-purple h1 { font-size: 60px; margin-bottom: 25px; }
@@ -133,38 +142,69 @@
 .hc-search-wrapper input { width: 100%; padding: 18px; border: 1px solid black; font-size: 17px; }
 .hc-arrow-icon { position: absolute; right: 20px; top: 18px; font-size: 22px; }
 
-/* Grid Layout css Strict Lining */
+
+/* Grid Layout */
 .hc-service-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-bottom: 1px solid black;
 }
 
-.hc-grid-item { padding: 55px 45px; }
-.item-flex { display: flex; gap: 20px; }
-.item-emoji { font-size: 40px; }
-.item-info h3 { margin-bottom: 10px; font-size: 22px; }
-.item-info p { line-height: 1.6; color: #333; margin-bottom: 10px; font-size: 17px; }
-.item-info a { color: #4C5FD5; text-decoration: none; font-weight: bold; }
+.hc-grid-item {
+  padding: 15px 30px;
+  border: 0 1px 1px 0 solid #eee;
+}
 
-/* Grid Line Utilities (Matches your top design) */
-.b-right { border-right: 1px solid black; }
-.b-bottom { border-bottom: 1px solid black; }
+.hc-grid-item:nth-child(2n) { border-right: 0; }
 
-/* Dark Footer Styling */
+.item-flex { display: flex; gap: 25px; align-items: flex-start; }
+.item-emoji { font-size: 50px; width: 80px; flex-shrink: 0; display: grid; place-items: center; }
+.item-info { flex: 1; }
+.item-info h3 { margin: 0 0 15px; font: bold 24px/1.2; }
+.item-info p { margin: 0 0 15px; font: 18px/1.5 #333; }
+.item-info a { color: #4C5FD5; font: bold 16px; text-decoration: none; }
+
+
+
 .hc-footer-black {
     background: black;
     color: white;
-    padding: 80px 40px;
+    padding: 30px 30px;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
 }
 
 .hc-footer-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
+    gap: 20px;
 }
 
-.f-column h4 { font-size: 22px; margin-bottom: 25px; }
-.f-column a { display: block; color: white; text-decoration: none; margin-bottom: 10px; font-size: 15px; }
-.f-contact-details { margin-top: 40px; }
+.f-column h4 { font-size: 22px; margin-bottom: 18px; margin-left: 50px;}
+.f-column a { display: block; color: white; text-decoration: none; margin-bottom: 10px; font-size: 14px; margin-left: 50px; }
+.f-contact-details2 { margin-top: 150px; }
+.f-contact-details {margin-left: 50px; margin-top: 28px; font-size: 14px}
 
+
+.bottom-footer {
+  background: black;
+  margin-top: 25px;
+  color: #aaa;
+  padding: 40px 20px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+nav { display: flex; gap: 40px; }
+a { color: #ccc; text-decoration: none; font-weight: bold; }
+a:hover { color: white; }
